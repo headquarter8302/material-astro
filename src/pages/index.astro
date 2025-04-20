@@ -1,0 +1,32 @@
+---
+import Helpers from "../helpers";
+import Container from "../components/meta/Container.astro";
+import Header from "../components/meta/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/meta/Section.astro";
+
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout>
+	<Header />
+	<Container>
+		<Section heading="Button">
+			<Button>Lorem</Button>
+			<Button helpers={Helpers.Colors.Blue.Blue2} class="extend circle"
+				>i</Button
+			>
+		</Section>
+		<Section heading="Card">
+			<Card>
+				<h5>Title</h5>
+				<div>Description</div>
+				<div>
+					<button>Button 1</button>
+					<button>Button 2</button>
+				</div>
+			</Card>
+		</Section>
+	</Container>
+</Layout>

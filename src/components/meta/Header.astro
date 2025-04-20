@@ -1,0 +1,73 @@
+---
+import { Image } from "astro:assets";
+import MaterialAstroLogo from "../../assets/icon.svg";
+---
+
+<style>
+  header {
+    height: 15em;
+    margin-inline: 5em;
+    margin-block: 1%;
+    border-radius: 16px;
+
+    background: url("../../assets/background.svg");
+    background-position: center;
+    background-size: 75%;
+    background-repeat: no-repeat;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    height: 100%;
+    border-radius: 16px;
+
+    backdrop-filter: saturate(2.5) blur(50px);
+  }
+
+  .desc {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .desc code {
+    background-image: linear-gradient(
+      to bottom right,
+      light-dark(hsl(273, 68%, 76%), #421468),
+      light-dark(hsl(309, 71%, 77%), #661159)
+    );
+    border-radius: 8px;
+    padding: 0.1em 0.25em;
+  }
+
+  code {
+    font-family: "Roboto Mono", "Fira Code", monospace;
+  }
+
+  @media screen and (prefers-color-scheme: light) {
+    .logo {
+      filter: invert(1) hue-rotate(180deg);
+    }
+  }
+</style>
+<header>
+  <div class="header-container">
+    <div class="desc">
+      <p>
+        This is <code>material-astro</code>. Via <a
+          href="https://www.beercss.com/">BeerCSS</a
+        >.
+      </p>
+    </div>
+    <Image
+      class:list={"logo"}
+      src={MaterialAstroLogo}
+      alt={"Material Astro's logo"}
+      width={"150"}
+      height={"150"}
+    />
+  </div>
+</header>
