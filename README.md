@@ -1,6 +1,6 @@
-# [material-astro logo](public/icon.svg) `material-astro`
+# ![material-astro logo](public/icon.svg) `material-astro`
 
-`material-astro` is a Material Design 3 template and playground for Astro projects. It uses [BeerCSS](https://github.com/beercss/beercss) to style its components. This template also gives resources regarding the usage of the helpers included in BeerCSS.
+**`material-astro`** is a Material Design 3 template and playground for Astro projects. It uses [BeerCSS](https://github.com/beercss/beercss) to style its components. This template also gives resources regarding the usage of the helpers included in BeerCSS.
 
 ## Structure
 
