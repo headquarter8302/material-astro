@@ -408,5 +408,3 @@ type HelperTypes =
 
 export { Helpers as default }
 export type { HelperTypes }
-
-// const abc: HelperTypes = Helpers.Directions.Vertical
