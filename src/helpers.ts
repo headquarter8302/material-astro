@@ -375,6 +375,58 @@ namespace Helpers {
     HorizontalMargin = "horizontal-margin",
     VerticalMargin = "vertical-margin"
   }
+
+  export enum Opacities {
+    Opacity = "opacity",
+    NoOpacity = "no-opacity",
+    SmallOpacity = "small-opacity",
+    MediumOpacity = "medium-opacity",
+    LargeOpacity = "large-opacity"
+  }
+
+  export enum Paddings {
+    Padding = "padding",
+    NoPadding = "no-padding",
+    TinyPadding = "tiny-padding",
+    SmallPadding = "small-padding",
+    MediumPadding = "medium-padding",
+    LargePadding = "large-padding",
+    LeftPadding = "left-padding",
+    RightPadding = "right-padding",
+    TopPadding = "top-padding",
+    BottomPadding = "bottom-padding",
+    HorizontalPadding = "horizontal-padding",
+    VerticalPadding = "vertical-padding"
+  }
+
+  export enum Positions {
+    Left = "left",
+    Right = "right",
+    Center = "center",
+    Top = "top",
+    Bottom = "bottom",
+    Middle = "middle",
+    Front = "front",
+    Back = "back"
+  }
+
+  export enum Responsive {
+    Responsive = "responsive",
+    S = "s",
+    M = "m",
+    L = "l"
+  }
+
+  export enum Ripples {
+    Ripple = "ripple",
+    SlowRipple = "slow-ripple",
+    FastRipple = "fast-ripple"
+  }
+
+  export enum Scrolls {
+    Scroll = "scroll",
+    NoScroll = "no-scroll"
+  }
 };
 
 type HelperTypes =
