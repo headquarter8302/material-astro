@@ -1,0 +1,19 @@
+---
+import BeerCSS from "./BeerCSS.astro";
+import type { ComponentProps } from "./components";
+import { getDefaultProps } from "./components";
+
+interface Props extends ComponentProps {
+  name: string;
+  id: string;
+}
+
+const props = getDefaultProps(Astro.props as Props);
+---
+
+<BeerCSS>
+  <label class={`checkbox ${props.helpers} ${props.class}`}>
+    <input type="checkbox" name={props.name} id={props.id} />
+    <slot />
+  </label>
+</BeerCSS>

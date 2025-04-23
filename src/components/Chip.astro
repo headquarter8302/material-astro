@@ -1,0 +1,36 @@
+---
+import BeerCSS from "./BeerCSS.astro";
+import type { ComponentProps } from "./components";
+import { getDefaultProps } from "./components";
+
+interface Props extends ComponentProps {
+  type: "button" | "anchor";
+}
+
+const props = getDefaultProps(Astro.props as Props);
+---
+
+<BeerCSS>
+  {
+    () => {
+      switch (props.type) {
+        case "button":
+          return (
+            <button class={`chip ${props.helpers} ${props.class}`}>
+              <slot />
+            </button>
+          );
+
+        case "anchor":
+          return (
+            <a class={`chip ${props.helpers} ${props.class}`}>
+              <slot />
+            </a>
+          );
+
+        default:
+          throw new Error("Chip type must be either 'button' or 'anchor'");
+      }
+    }
+  }
+</BeerCSS>
