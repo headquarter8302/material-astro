@@ -9,7 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^4.0.8",
     "astro": "^5.6.1",
     "beercss": "^3.10.5",
     "preact": "^10.26.5"
