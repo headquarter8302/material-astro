@@ -1,9 +1,4 @@
 namespace Helpers {
-  export enum Theme {
-    Light = "light",
-    Dark = "dark"
-  }
-
   export enum Alignments {
     LeftAlign = "left-align",
     RightAlign = "right-align",
@@ -368,10 +363,12 @@ namespace Helpers {
     SmallMargin = "small-margin",
     MediumMargin = "medium-margin",
     LargeMargin = "large-margin",
+
     LeftMargin = "left-margin",
     RightMargin = "right-margin",
     TopMargin = "top-margin",
     BottomMargin = "bottom-margin",
+
     HorizontalMargin = "horizontal-margin",
     VerticalMargin = "vertical-margin"
   }
@@ -387,14 +384,17 @@ namespace Helpers {
   export enum Paddings {
     Padding = "padding",
     NoPadding = "no-padding",
+
     TinyPadding = "tiny-padding",
     SmallPadding = "small-padding",
     MediumPadding = "medium-padding",
     LargePadding = "large-padding",
+
     LeftPadding = "left-padding",
     RightPadding = "right-padding",
     TopPadding = "top-padding",
     BottomPadding = "bottom-padding",
+
     HorizontalPadding = "horizontal-padding",
     VerticalPadding = "vertical-padding"
   }
@@ -403,9 +403,11 @@ namespace Helpers {
     Left = "left",
     Right = "right",
     Center = "center",
+
     Top = "top",
     Bottom = "bottom",
     Middle = "middle",
+
     Front = "front",
     Back = "back"
   }
@@ -426,6 +428,122 @@ namespace Helpers {
   export enum Scrolls {
     Scroll = "scroll",
     NoScroll = "no-scroll"
+  }
+
+  export enum Shadows {
+    Shadow = "shadow",
+    LeftShadow = "left-shadow",
+    RightShadow = "right-shadow",
+    TopShadow = "top-shadow",
+    BottomShadow = "bottom-shadow"
+  }
+
+  export enum Sizes {
+    Tiny = "tiny",
+    Small = "small",
+    Medium = "medium",
+    Large = "large",
+    Extra = "extra",
+
+    Wrap = "wrap",
+    NoWrap = "no-wrap",
+
+    Max = "max",
+
+    AutoWidth = "auto-width",
+    SmallWidth = "small-width",
+    MediumWidth = "medium-width",
+    LargeWidth = "large-width",
+
+    AutoHeight = "auto-height",
+    SmallHeight = "small-height",
+    MediumHeight = "medium-height",
+    LargeHeight = "large-height"
+  }
+
+  export enum Spaces {
+    Space = "space",
+    NoSpace = "no-space",
+    SmallSpace = "small-space",
+    MediumSpace = "medium-space",
+    LargeSpace = "large-space"
+  }
+
+  export enum Theme {
+    Light = "light",
+    Dark = "dark",
+
+    Primary = "primary",
+    PrimaryText = "primary-text",
+    PrimaryBorder = "primary-border",
+    PrimaryContainer = "primary-container",
+
+    Secondary = "secondary",
+    SecondaryText = "secondary-text",
+    SecondaryBorder = "secondary-border",
+    SecondaryContainer = "secondary-container",
+
+    Tertiary = "tertiary",
+    TertiaryText = "tertiary-text",
+    TertiaryBorder = "tertiary-border",
+    TertiaryContainer = "tertiary-container",
+
+    Error = "error",
+    ErrorText = "error-text",
+    ErrorBorder = "error-border",
+    ErrorContainer = "error-container",
+
+    Background = "background",
+    Surface = "surface",
+    SurfaceVariant = "surface-variant",
+    InverseSurface = "inverse-surface",
+
+    InversePrimary = "inverse-primary",
+    InversePrimaryText = "inverse-primary-text",
+    InversePrimaryBorder = "inverse-primary-border",
+
+    Black = "black",
+    BlackText = "black-text",
+    BlackBorder = "black-border",
+
+    White = "white",
+    WhiteText = "white-text",
+    WhiteBorder = "white-border",
+
+    Transparent = "transparent",
+    TransparentText = "transparent-text",
+    TransparentBorder = "transparent-border"
+  }
+
+  export enum Triggers {
+    Active = "active"
+  }
+
+  export namespace Typography {
+    export enum Texts {
+      Italic = "italic",
+      Bold = "bold",
+      Underline = "underline",
+      Overline = "overline",
+      Upper = "upper",
+      Lower = "lower",
+      Capitalize = "capitalize",
+      Link = "link",
+      SmallText = "small-text",
+      MediumText = "medium-text",
+      LargeText = "large-text"
+    }
+
+    export enum Sizes {
+      Small = "small",
+      Medium = "medium",
+      Large = "large"
+    }
+  }
+
+  export enum Waves {
+    Wave = "wave",
+    NoWave = "no-wave"
   }
 };
 
@@ -456,7 +574,23 @@ type HelperTypes =
   Helpers.Directions |
   Helpers.Elevates |
   Helpers.Forms |
-  Helpers.Margins
+  Helpers.Margins |
+  Helpers.Opacities |
+  Helpers.Paddings |
+  Helpers.Positions |
+  Helpers.Responsive |
+  Helpers.Ripples |
+  Helpers.Scrolls |
+  Helpers.Shadows |
+  Helpers.Sizes |
+  Helpers.Spaces |
+  Helpers.Theme |
+  Helpers.Triggers |
+
+  Helpers.Typography.Sizes |
+  Helpers.Typography.Texts |
+
+  Helpers.Waves
 
 export { Helpers as default }
 export type { HelperTypes }
