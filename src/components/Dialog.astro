@@ -1,0 +1,17 @@
+---
+import BeerCSS from "./BeerCSS.astro";
+import type { ComponentProps } from "./components";
+import { getDefaultProps } from "./components";
+
+interface Props extends ComponentProps {
+  active?: boolean;
+}
+
+const props = getDefaultProps(Astro.props as Props);
+---
+
+<BeerCSS>
+  <dialog class={`responsive ${props.active} ${props.helpers} ${props.class}`}>
+    <slot />
+  </dialog>
+</BeerCSS>

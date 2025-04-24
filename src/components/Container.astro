@@ -1,0 +1,13 @@
+---
+import BeerCSS from "./BeerCSS.astro";
+import type { ComponentProps } from "./components";
+import { getDefaultProps } from "./components";
+
+interface Props extends ComponentProps {}
+
+const props = getDefaultProps(Astro.props as Props);
+---
+
+<BeerCSS>
+  <main class={`responsive ${props.helpers} ${props.class}`}><slot /></main>
+</BeerCSS>

@@ -21,10 +21,10 @@ Components are located in `src/components`.
 - [x] Button
 - [x] Card
 - [x] Checkbox
-- [ ] Chip
-- [ ] Container
-- [ ] Dialog
-- [ ] Divider
+- [x] Chip
+- [x] Container
+- [x] Dialog
+- [x] Divider
 - [ ] Expansion
 - [ ] Grid
 - [ ] Icon
